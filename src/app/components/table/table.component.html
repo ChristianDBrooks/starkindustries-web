@@ -1,0 +1,24 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">UID</th>
+      <th scope="col">USER</th>
+      <th scope="col">JSON OBJ</th>
+      <th scope="col">FROM</th>
+      <th scope="col">TO</th>
+      <th scope="col">TIMESTAMP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of records">
+      <td>{{row.uid}}</td>
+      <td>{{row.user}}</td>
+      <td>{{row.json | json}}</td>
+      <td>{{row.from}}</td>
+      <td>{{row.to}}</td>
+      <td>{{row.timestamp | date}}</td>
+    </tr>
+  </tbody>
+</table>
+
+{{test | json}}
